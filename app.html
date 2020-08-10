@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Pro Weather">
+    <meta name="apple-mobile-web-app-title" content="Pro Weather">
+    <meta name="theme-color" content="#ADD8E6">
+    <meta name="msapplication-navbutton-color" content="#ADD8E6">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="images/favicon192.png">
+    <link rel="apple-touch-icon" href="images/favicon192.png">
+    <link rel="icon" sizes="512x512" href="images/favicon512.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="images/favicon512.png">
+
+    <link rel="icon" type="image/png" href="images/favicon192.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Weather</title>
+</head>
+<body class="dark-mode">
+    <button class="settings">
+        <i class="material-icons">
+            settings
+        </i>
+    </button>
+    <div class="banner">
+        <div class="searchBar">
+            <input type="text" class="searchText" placeholder="Search Location">
+            <button class="searchBtn">
+                <i class="material-icons">search</i>
+            </button>
+        </div>
+    <Label>Pro Weather</Label>
+
+    </div>
+
+<!-- Search Bar -->
+<!-- off = left ||| on = right -->
+    <div class="unitContainer">
+        <i class="material-icons closebtn">close</i>
+        <label class="unitName">Metric</label>
+        <i class="material-icons unit-toggle-btn">toggle_off</i>
+        <label class="unitName">Imperial</label>
+    </div>
+
+<!-- Units -->
+<div class="copyR">@AumBhatt</div>
+<!-- Main -->
+<main>
+    <div class="locationName">
+        Muscat, Oman
+    </div>
+
+    <div class="iconContainer">
+        <img src="" id="iconImg" alt="">
+        <span class="icon-label">
+            <i class="material-icons">arrow_back</i>
+            Slide to see more
+            <i class="material-icons">arrow_forward</i>
+        </span>
+    </div>
+    
+
+
+
+    <div class="sliderContainer">
+        <div class="slider-current slider-card">
+
+            <div class="text">
+            </div>
+
+            <div class="temp_x">
+            </div>
+
+            <div class="feelslike_x">
+                Feels Like 
+            </div>
+
+            <div class="min-maxContainer">
+                <div class="maxtemp_x">
+                    Max : 
+                </div>
+                <div class="mintemp_x">
+                    Min : 
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-extra slider-card">
+
+            <div class="precip_x">
+                Precipitation : 
+            </div>
+            <div class="humidity">
+                Humidity : 
+            </div>
+            <div class="pressure_x">
+                Pressure : 
+            </div>
+            <div class="uv">
+                UV Index : 
+            </div>
+            <div class="vis_x">
+                Visibility: 
+            </div>
+
+        </div>
+
+        <div class="slider-wind slider-card">
+            <div class="wind-title">
+                Wind
+            </div>
+            <div class="wind_x">
+                
+            </div>
+            <div class="windDirect">
+                <div class="wind_degree">
+                    <i class="material-icons">
+                        navigation
+                    </i>
+                </div>
+                <div class="wind_dir">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-astro slider-card">
+            <div class="astro-title">
+                Astrology
+            </div>
+            <div class="astroWrap" style="grid-area: sun1;">
+                <label>Sunrise</label>
+                <span class="sunrise"></span>
+            </div>
+            <div class="astroWrap" style="grid-area: sun2;">
+                <label>Sunset</label>
+                <span class="sunset"></span>
+            </div>
+            <div class="astroWrap" style="grid-area: moon1;">
+                <label>Moonrise</label>
+                <span class="moonrise"></span>
+            </div>
+            <div class="astroWrap" style="grid-area: moon2;">
+                <label>Moonset</label>
+                <span class="moonset"></span>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>Pro Weather</footer>
+
+</body>
+<!-- <script src="js/slider.js"></script> -->
+<script src="sw.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ui-control.js"></script>
+
+<script>
+    /* document.querySelector('.slider-extra').addEventListener('click', function(){
+        document.querySelector('.slider-current').scrollIntoView();
+        document.querySelector('.slider-current').scrollTop += 15;
+    }); */
+    
+</script>
+</html>

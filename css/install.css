@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    font-family: 'Comfortaa', cursive;
+
+
+    background: #ADD8E6;
+}
+
+*:focus{
+    outline: none;
+}
+
+/* ----- Banner ----- */
+
+.banner{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px;
+
+    font-size: x-large;
+    font-weight: bold;
+    color: #E67E22;
+
+    animation-duration: 1s;
+    animation-name: banner;
+
+}
+
+/* .banner img{
+    width: 50px;
+} */
+
+.banner label{
+    font-size: medium;
+    font-weight: normal;
+    color: black;
+}
+
+/* ----- Main ----- */
+
+main{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    animation-duration: 1s;
+    animation-name: main;
+
+}
+
+/* ----- start ----- */
+
+.startInstall{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px;
+
+}
+
+.startInstall label{
+    text-align: center;
+    line-height: 30px;
+}
+
+.startInstall .installBtn{
+    width: auto;
+
+    margin: 20px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: bold;
+    font-family: inherit;
+    text-align: center;
+
+    background: white;
+}
+
+.installBtn:active{
+    background: #E67E22;
+    color: white;
+}
+
+/* ----- Loader ----- */
+
+.loader{
+    width: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loader label{
+    position: absolute;
+
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+    animation-iteration-count: infinite;
+    animation-duration: 1.7s;
+    animation-name: loaderLbl;
+    
+}
+
+.loader img{
+    width: 100%;
+
+    animation-iteration-count: infinite;
+    animation-duration: 1.7s;
+    animation-name: loader;
+}
+
+/* ----- Installed ----- */
+
+.installed{
+    width: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    animation-duration: 1s;
+    animation-name: none;
+}
+
+.installed label{
+    text-align: center;
+}
+
+.installed img{
+    margin: 5px;
+}
+
+@keyframes banner{
+    from{
+        transform: translateY(-100%);
+    }
+    to{}
+}
+
+@keyframes main{
+    from{
+        transform: translateY(100%);
+    }
+    to{}
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loaderLbl{
+    0%{
+        font-size: 15px;
+    }
+    50%{
+        font-size: 10px;
+    }
+    100%{
+        font-size: 15px;
+    }
+}
+
+@keyframes installed{
+    from{
+        transform: translateY(-100%);
+        visibility: hidden;
+    }
+}

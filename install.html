@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Pro Weather">
+    <meta name="apple-mobile-web-app-title" content="Pro Weather">
+    <meta name="theme-color" content="#ADD8E6">
+    <meta name="msapplication-navbutton-color" content="#ADD8E6">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="images/favicon192.png">
+    <link rel="apple-touch-icon" href="images/favicon192.png">
+    <link rel="icon" sizes="512x512" href="images/favicon512.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="images/favicon512.png">
+
+
+    <link rel="stylesheet" href="css/install.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Weather</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="images/install/favicon.svg" alt="">
+        <div class="appName">
+            Pro<br>Weather<br>
+            <label>By Aum Bhatt</label>
+        </div>
+    </div>
+
+    <main>
+        <div class="startInstall">
+            <label>Install the app by clicking "Install"<br>Then click 'Add' when prompted</label>
+            <button class="installBtn">Install</button>
+        </div>
+
+        <div class="loader">
+            <img src="images/install/loader.svg" alt="">
+            <label>Installing</label>
+        </div>
+
+        <div class="installed">
+            <span style="font-weight: 900;display: flex;align-items: center; justify-content: center;">
+                Installed<i style="margin-left: 5px; font-size: 20px;" class="material-icons">check</i><br><br>
+            </span>
+            <label>Please go check your homescreen<br>You will find the app!</label>
+            <img src="images/install/Tutorial.svg" alt="">
+        </div>
+    </main>
+</body>
+<script src="sw.js"></script>
+<script src="install.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then(function(registration) {
+      console.log('Registration successful, scope is:', registration.scope);
+    })
+    .catch(function(error) {
+      console.log('Service worker registration failed, error:', error);
+    });
+}
+</script>
+</html>

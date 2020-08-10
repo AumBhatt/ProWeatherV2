@@ -1,0 +1,20 @@
+{
+  "name": "Pro Weather",
+  "short_name": "Pro Weather",
+  "lang": "en-US",
+  "start_url": "app.html",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#ADD8E6",
+  "icons": [
+    {
+      "src": "images/favicon192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/favicon512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#ADD8E6"
+}
