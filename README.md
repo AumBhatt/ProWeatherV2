@@ -1,4 +1,4 @@
-# ![alt text](https://github.com/AumBhatt/ProWeatherV2/blob/master/images/install/favicon.png) Pro Weather Version 2.0
+# <div align="center" > <img width="35px" src="https://github.com/AumBhatt/ProWeatherV2/blob/master/images/install/favicon.png"/> Pro Weather Version 2.0</div>
 ### _⛅⛅ Made By Aum Bhatt. ⛅⛅_ 
 
 This a fun little weather app made by me as a personal project of mine which<br>
